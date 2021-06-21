@@ -22,14 +22,14 @@ module.exports = async (req, res) => {
         .send(msg)
         .then(() => {
             console.log('Email sent')
-            return res.stats(200).json({
+            return res.status(200).json({
                 success: true,
                 message: 'Email sent'
             })
         })
         .catch((error) => {
             console.error(error)
-            return res.stats(500).json({
+            return res.status(500).json({
                 success: false,
                 message: `Email NOT sent\n\n\r\r${error.message}`
             })
