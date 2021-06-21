@@ -11,6 +11,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 module.exports = async (req, res) => {
 
     console.log("process.env.SENDGRID_EMAIL", process.env.SENDGRID_EMAIL)
+    console.log("process.env.SENDGRID_API_KEY", process.env.SENDGRID_API_KEY)
 
     const msg = {
         to: process.env.SENDGRID_EMAIL, // Change to your recipient
@@ -33,7 +34,8 @@ module.exports = async (req, res) => {
             console.error(error)
             return res.status(500).json({
                 success: false,
-                message: `Email NOT sent\n\n\r\r${error.message}`
+                message: `Email NOT sent:\n\n\r\r${error.message}`,
+                error
             })
         })
 
