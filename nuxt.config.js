@@ -18,7 +18,7 @@ export default {
   asyncScripts: true,
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
-  head: generateHeadTags('Nuxt PWA Vuetify Optimized', 'welcome', null, false),
+  head: generateHeadTags('Nuxt Vuetify Optimized', 'welcome', null, false),
   css: [
     '~/assets/css/global.css',
   ],
@@ -36,15 +36,6 @@ export default {
   ],
   sitemap: {
     hostname: 'https://DOMAIN_NAME.com',
-  },
-  pwa: {
-    manifest: {
-      name: 'Confessions',
-      short_name: 'B & H',
-    },
-    meta: {
-      theme_color: secondaryColor
-    }
   },
   axios: {},
   vuetify: {

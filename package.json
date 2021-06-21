@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
     "fibers": "^5.0.0",
