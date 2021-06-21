@@ -10,6 +10,8 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 module.exports = async (req, res) => {
 
+    console.log("process.env.SENDGRID_EMAIL", process.env.SENDGRID_EMAIL)
+
     const msg = {
         to: process.env.SENDGRID_EMAIL, // Change to your recipient
         from: 'test@example.com', // Change to your verified sender
