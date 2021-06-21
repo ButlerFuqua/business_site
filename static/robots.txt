@@ -1,0 +1,1 @@
+Sitemap: http://www.DOMAIN_NAME.com/sitemap.xml
