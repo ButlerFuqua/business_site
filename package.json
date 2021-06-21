@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
+    "@sendgrid/mail": "^7.4.5",
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
     "fibers": "^5.0.0",
